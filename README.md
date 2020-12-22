@@ -68,7 +68,7 @@ python Navigation.py Duel priority
 ```
 you could train both networks with either priority exp replay or the origin exp replay.
 
-__Note: For grading purpose, please train the agent with Dueling DQN without priority exp replay. Run as following__
+__Note: For grading purpose, please train the agent with Dueling DQN without priority exp replay. Run the code as following__
 ```javascript
 python Navigation.py Duel replay
 ```

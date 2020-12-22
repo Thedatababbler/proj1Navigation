@@ -1,8 +1,9 @@
 # proj1Navigation
 
 [image1]:https://github.com/Thedatababbler/proj1Navigation/blob/main/DDQN.JPG
-
+[image2]:https://github.com/Thedatababbler/proj1Navigation/blob/main/deul_avg.JPG
 [image3]:https://github.com/Thedatababbler/proj1Navigation/blob/main/priority_exp.png
+[image4]:https://github.com/Thedatababbler/proj1Navigation/blob/main/duel.png
 
 ### Project Details
 This is the implementation of a trained agent to navigate in a Unity ML environment 
@@ -53,6 +54,9 @@ On the other hand, the Dueling DQN, which is another variant of the original DQN
 ```javascript
 python Navigation.py Duel replay
 ```
+
+![Duel][image2]
+![Duel2][image4]
 
 Experience Replay is a vital training technique for a RL agent, however, a experience replay buffer implemented with FIFO queue structure has its limit. Thus, an improved version of experience replay
 is to add an priority for each state. While sampling a batch for training, the priority will dedicate the probability of sampling. I adapt the code in dqn_agent.py to include this improved

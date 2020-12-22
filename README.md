@@ -79,9 +79,17 @@ python Navigation.py Duel replay
 
 ### Training Aftermath
 When you finished training, the code will directly saved a **'checkpoint.path'** file, which contains all the weights of the network you just trained, to your current path. You could
-use this file to run a simple 10 episodes validation runs to check the trained agent's performance
+use this file to run a simple 10 episodes validation to check the trained agent's performance in the same environment. This repository has already provided a well-trained weights and included the related **checkpoint.path** in this repo. Once you clone this repo, you can directly run the test code as following to have a breif idea about the agent's performance.
 
---TODO
+```javascript
+python agent_test.py DDQN
+```
+
+***Note: The 'checkpoint.path' file I included in this repo was trained from the DDQN network. If you trained the agent with the Deuling DQN network instead and receive a new 'checkpoint.path' file in your current path, then please run the following command to check the agent test.***
+
+```javascript
+python agent_test.py Duel
+```
 
 
 

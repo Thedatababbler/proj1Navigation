@@ -60,7 +60,7 @@ python Navigation.py Duel replay
 
 Experience Replay is a vital training technique for a RL agent, however, a experience replay buffer implemented with FIFO queue structure has its limit. Thus, an improved version of experience replay
 is to add an priority for each state. While sampling a batch for training, the priority will dedicate the probability of sampling. I adapt the code in dqn_agent.py to include this improved
-version of exp replay. However, my expeirement did deliver the results I expected. Comparing to the vanilla exp replay, my implementation of priority replay does boost the scores in the early agent,
+version of exp replay. However, my expeirement did not deliver the results I expected. Comparing to the vanilla exp replay, my implementation of priority replay does boost the scores in the early agent,
 but the agent is unable to solve the task even after 2000 episodes. It only achieved a max average scores about 11.0, which is not enough to be considered solved the task. This could because of my implementation is not 
 correct. And I will try to repair this problem in future updates. 
 
